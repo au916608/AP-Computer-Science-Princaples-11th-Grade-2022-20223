@@ -1,0 +1,89 @@
+'''
+x=5
+y= "John"
+print(x)
+print(y)
+# words in programming are called strings 0
+
+# 5 = integers => int
+
+# "Hello"= world => strings 
+
+# Booleans = 0,1 Example true/false 
+
+# Variables are case sensetive 
+a = 4
+A = "Bob"
+print (a,A)
+
+# A will NOT OVERWRITE a 
+
+# = in programming means "assigned to" Exple  5 is assigned to variable x 
+# LEGAL VARIABLE NAMES 
+# A variable name must start with a letter or underscore and it must be lowercase 
+# A variable cannot startwith a number. 
+# IS CASE SENSITIVE AND CANNOT CONTAIN ALPHA NUMERIC (AGE # age)
+
+#NUMERIC charecters(A-z, 0 ,9)
+# many values to mltiple variable
+#python allows you to assign many values to multiple variables
+x,y,z= "Orange", "Bannana", "Cherry"
+print(x)
+print(y)
+print(z)
+
+# python allows you to assign one value to multiple variables 
+x = y = z = "orange"
+print(x)
+print(y)
+print(z)
+
+# Random Number
+import random
+print(random.randrange(1,10))
+
+#Concatination
+#concatination is to combine two strings you can use the + operator
+
+a= "hello"
+b= "patricia"
+c= a+b
+print (c)
+
+#add space bewteen variables
+c= a+ " "+ b
+print (c)
+
+#Format Sting 
+age = "36"
+text = "My name is patricia I am " + age
+print (text)
+'''
+#Python Boolean
+#It uses two values true or false, it evaluates any expression true or false, python then evaluates and return boolean answer. 
+print (10>9)
+print (10==9)
+print (10<9)
+
+#Boolean in a condition is a (if statement)
+a = 200
+b = 33
+
+if b > a: 
+  print ("b is greater than a")
+else:
+  print ("a is greater than b")
+
+#evaluate values and variables
+print(bool("Hello"))
+print(bool("15"))
+
+#OPERATOR 
+#Examples
+x = 15
+y = 2
+print (x % y)
+#print (x % y)
+print (x // y) #Floor division rounds up to the nearest whole number
+
+print (x ** y) #same as 2+2+2+2+2
