@@ -1,0 +1,100 @@
+#Functions
+''' A function is a a block of code which only runs when its called. You can pass data, known as paremeter, into a function can get data as a result '''
+#creating a function
+#In python a function is created using a def keyboard
+'''
+def my_function (): 
+  print ("hello from a function") 
+  
+#Calling a function
+#To call a function is like envoking a ghost, use the function name followed by paranthesis. 
+
+def my_function (): 
+  print ("hello from a function") 
+my_function()
+'''
+'''
+#Example
+def my_function(fname):
+  print (fname + "Joaquin")
+my_function("pizza")
+'''
+#Paramter or arguments
+
+#The terms paremeter and argument can be used for the same thing. Information that are past into a function
+
+#A paremeter is used inside the paranthesis in function definition. 
+
+#An argument is the value that is set to a function when it is called 
+
+#Example 
+'''
+def my_function(fname,lname):
+  print(fname+ " " + lname)
+my_function("Carlos", "Campuzano")
+'''
+#Python Class
+#To create a class we use a keyword class
+#Create a class named MyClass, with a property called x:
+class MyClass :
+  x=5
+
+  #create an object
+  
+  #We can use the class name MyClass to create an object
+  
+  #Create an object made G1, and print the value of x.
+
+p1 = MyClass()
+print(p1.x)
+
+#The_init_() function to assign values for name and age
+
+#create a class named person use the_init_() function to assign name values for name and age:
+
+class person():
+  def __init__(self,name, age):
+    self.name = name
+    self.age = age
+p1 = person("John", 36)
+print (p1.name)
+print (p1.age)
+
+#Note The _init_ function is called automatically everytime the class is being used to create a new object.
+# Inheritence allows us to define a class that inherits all the methods and properties forom another class
+
+#parent class is the class name being inherited from, also called base class.
+
+#Child class: the class that inherits from another class, also called derived class.
+
+#Any class can be parent, so syntax is the same as creating another another class
+
+#Ex: create a class named person, with first name and last name properties, and print name method.
+
+class person():
+  def __init__(self,fname, lname):
+    self.firstname = fname
+    self.lastname = lname
+p1 = person("John", "Doe")
+print (p1.fname)
+print (p1.lname)
+  def printname (self):
+  print (self.firstname, self.lastname)
+
+#use the person class to create an object, and then execute the printname method
+
+x = person ("John", "Doe")
+x.printname()
+
+# Child class
+#Child Class, to create a class that inherits functionality from another class, send the parent class a parameter when creating the child class. 
+
+#Ex: create a class named student which will inherit the properties and methods from the Person class
+
+class student(person):
+  pass
+
+#Ex: Use a student class to crate an object, and then execute the printname method
+
+x= student ( "Mike", "Olsen")
+x.printname()
